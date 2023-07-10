@@ -8,7 +8,6 @@
 # testing
 /coverage
 
-# next.js
 /out/
 
 # production
@@ -32,5 +31,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-package-lock.json
