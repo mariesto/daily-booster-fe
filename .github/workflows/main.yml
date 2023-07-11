@@ -31,5 +31,5 @@ jobs:
         script: |
           cd /var/www/daily-booster/daily-booster-fe
           git pull
-          npm run start
+          pm2 save
           pm2 restart daily-booster-fe
