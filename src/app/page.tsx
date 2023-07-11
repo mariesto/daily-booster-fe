@@ -3,7 +3,7 @@ import {JetBrains_Mono} from 'next/font/google'
 import avatar from '../../public/pembalap-coder.png'
 import Image from "next/image";
 import styles from './page.module.css';
-import {Avatar, Text, Grid, NextUIProvider, Container, normalColors} from "@nextui-org/react";
+import {Text, Container} from "@nextui-org/react";
 import React, {createContext} from "react";
 
 // @ts-ignore
