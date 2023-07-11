@@ -28,7 +28,6 @@ jobs:
         username: ${{ secrets.DIGITALOCEAN_USERNAME }}
         key: ${{ secrets.DIGITALOCEAN_PRIVATE_KEY }}
         port: ${{ secrets.DIGITALOCEAN_PORT }}
-        source: '.'
         script: |
           cd /var/www/daily-booster/daily-booster-fe
           git pull
