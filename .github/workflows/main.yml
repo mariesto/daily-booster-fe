@@ -31,6 +31,10 @@ jobs:
         script: |
           cd /var/www/daily-booster/daily-booster-fe
           git pull
+          rm -rf node_modules
+          npm cache clean --force
           npm run build
-          pm2 start npm --name "daily-booster-fe" -- start
-          pm2 list
+          pm2 delete all
+          pm2 start npm --name "daily-booster" -- start
+          pm2 startup
+          pm2 save --force
