@@ -31,5 +31,5 @@ jobs:
         script: |
           cd /var/www/daily-booster/daily-booster-fe
           git pull
-          pm2 save
           pm2 restart daily-booster-fe
+          pm2 list
